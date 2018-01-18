@@ -1,0 +1,59 @@
+{
+  "name": "frontend-layout",
+  "version": "3.2.2",
+  "description": "A React component (server side) with common layout for meli web apps.",
+  "author": "Front-end Core <frontendcore@mercadolibre.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test _mocha test/*.spec.js --compilers js:babel-register",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- test/*.spec.js --compilers js:babel-register",
+    "start-dev": "NODE_ENV=development nodemon ./examples/index.js --NODE_CONFIG_DIR=examples/config",
+    "build": "NODE_ENV=production webpack --config ./webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --config ./webpack.config.js",
+    "build:examples": "NODE_ENV=development webpack --config ./examples/webpack.config.js",
+    "watch:examples": "NODE_ENV=development webpack --watch --config ./examples/webpack.config.js",
+    "lint": "NODE_ENV=test eslint src/** test/*.js",
+    "posttest": "npm run lint",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "frontend-env": "^2.0.0",
+    "frontend-hotjar": "1.0.0",
+    "frontend-metrics": "1.0.0",
+    "nav-cart": "1.1.1",
+    "ui-navigation": "3.0.8"
+  },
+  "peerDependencies": {
+    "frontend-config": "^1.4.0",
+    "frontend-analytics": "^2.0.0",
+    "frontend-melidata": "^2.0.0",
+    "frontend-country_config": "^1.0.0",
+    "frontend-logger": "^1.1.0",
+    "frontend-script": "^2.1.0",
+    "frontend-style": "^2.0.0",
+    "newrelic": "^1.39.1",
+    "prop-types": "^15.5.10",
+    "ragnar": "^1.0.0",
+    "react": "^15.4.0",
+    "react-declarative-head": "^1.0.0",
+    "react-dom": "^15.4.0",
+    "react-side-effect": "^1.1.0",
+    "serialize-javascript": "1.3.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "0.1.16",
+    "node-mocks-http": "1.5.5",
+    "nordic": "^2.0.5",
+    "nordic-dev": "^1.0.1",
+    "prop-types": "^15.5.10",
+    "webpack-node-externals": "1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercadolibre/frontend-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mercadolibre/frontend-layout/issues"
+  },
+  "homepage": "https://github.com/mercadolibre/frontend-layout#readme"
+}

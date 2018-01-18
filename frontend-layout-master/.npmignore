@@ -1,0 +1,8 @@
+index-dev.js
+coverage
+test
+.babelrc
+.editorconfig
+.eslintrc
+.npmrc
+.nvmrc

@@ -1,0 +1,15 @@
+# Logs
+*.log
+
+# Dependency directory
+node_modules
+
+# Trash
+.DS_Store
+.idea
+build
+lib
+bundle.js
+
+# Test Files that should be ignored
+coverage

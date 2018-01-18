@@ -1,0 +1,11 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["off", { "devDependencies": true }],
+    "no-unused-expressions": "off",
+    "global-require": "off",
+    "no-underscore-dangle": "off"
+  }
+}
